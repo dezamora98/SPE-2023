@@ -1,0 +1,6 @@
+[submodule "StudentProjects/Luis_Manuel"]
+	path = StudentProjects/Luis_Manuel
+	url = https://github.com/LuisLorTer/Tesis.git
+[submodule "StudentProjects/Juan_Jose"]
+	path = StudentProjects/Juan_Jose
+	url = https://github.com/SHERLOCKEDAZAI/Tesis_Repository.git
