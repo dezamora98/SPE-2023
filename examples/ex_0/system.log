@@ -2629,3 +2629,24 @@ Elapsed time =      2 sec.
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 12.4 Build EDK_MS4.81d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Generated Block Diagram.
+Diagram Controls
+Zoom In/Out = ALT + (Mouse + Left Button) or ARROW UP/DOWN.
+Pan = SHIFT + (Mouse + Left Button) or ARROW UP/DOWN/LEFT/RIGHT.
+
+********************************************************************************
+At Local date and time: Sat Sep 16 05:53:54 2023
+ make -f system.make program started...
+mb-gcc -O0 test/main.c  -o test/executable.elf \
+	    -mxl-soft-mul -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.00.b   -g    -I./microblaze_0/include/  -L./microblaze_0/lib/  \
+	  
+test/main.c:26:2: warning: no newline at end of file
+mb-size test/executable.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2602	    348	   1072	   4022	    fb6	test/executable.elf
+
+WARNING:EDK:3915 - Process successfully completed but error message(s) were generated. Please verify that the messages are only warnings.Done!
