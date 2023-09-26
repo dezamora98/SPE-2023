@@ -4,3 +4,6 @@
 [submodule "StudentProjects/Juan_Jose"]
 	path = StudentProjects/Juan_Jose
 	url = https://github.com/SHERLOCKEDAZAI/Tesis_Repository.git
+[submodule "StudentProjects/Camila"]
+	path = StudentProjects/Camila
+	url = https://github.com/cbeatonv/SPE.git
