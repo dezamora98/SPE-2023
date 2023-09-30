@@ -2776,3 +2776,284 @@ implementation/download.bit
 Memory Initialization completed successfully.
 
 Done!
+
+********************************************************************************
+At Local date and time: Tue Sep 26 05:51:17 2023
+ make -f system.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Sep 26 05:51:29 2023
+ make -f system.make bits started...
+make: Nothing to be done for `bits'.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Sep 26 05:52:09 2023
+ make -f system.make exporttosdk started...
+mkdir -p SDK/SDK_Export/hw
+psf2Edward.exe -inp system.xmp -edwver 1.2 -xml SDK/SDK_Export/hw/system.xml 
+Release 12.4 - psf2Edward EDK_MS4.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME:plb_v46 INSTANCE:mb_plb -
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 39 - 2 master(s) : 4
+slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb -
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 46 - 1 master(s) : 1
+slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb -
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 53 - 1 master(s) : 1
+slave(s)
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+WARNING:EDK:2098 - PORT:IWAIT CONNECTOR:ilmb_LMB_Wait -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 386 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:ICE CONNECTOR:ilmb_LMB_CE -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 387 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:IUE CONNECTOR:ilmb_LMB_UE -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 388 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:DWAIT CONNECTOR:dlmb_LMB_Wait -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 424 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:DCE CONNECTOR:dlmb_LMB_CE -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 425 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:DUE CONNECTOR:dlmb_LMB_UE -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 426 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:bscan_tdo1 CONNECTOR:bscan_tdo1 -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 230 - No driver found. Port will be driven to GND!
+WARNING:EDK:2099 - PORT:bscan_tdi CONNECTOR:bscan_tdi -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 223 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_reset CONNECTOR:bscan_reset -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 224 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_shift CONNECTOR:bscan_shift -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 225 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_update CONNECTOR:bscan_update -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 226 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_capture CONNECTOR:bscan_capture -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 227 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_sel1 CONNECTOR:bscan_sel1 -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 228 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_drck1 CONNECTOR:bscan_drck1 -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 229 - floating connection!
+WARNING:EDK:2099 - PORT:Peripheral_Reset CONNECTOR:sys_periph_reset -
+   Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 161 - floating
+   connection!
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen.exe -inp system.xmp -report SDK/SDK_Export/hw/system.html  -make_docs_local
+Release 12.4 - xdsgen EDK_MS4.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing microblaze_0.jpg.....
+Rasterizing mb_plb.jpg.....
+Rasterizing ilmb.jpg.....
+Rasterizing dlmb.jpg.....
+Rasterizing dlmb_cntlr.jpg.....
+Rasterizing ilmb_cntlr.jpg.....
+Rasterizing lmb_bram.jpg.....
+Rasterizing LEDs_8Bit.jpg.....
+Rasterizing DIP_Switches_4Bit.jpg.....
+Rasterizing Buttons_3Bit.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing mdm_0.jpg.....
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing system_blkd.jpg.....
+Report generated.
+Report generation completed.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Sep 26 05:52:29 2023
+ xsdk.exe -workspace \\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\SDK\SDK_Workspace_35\ -hwspec \\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 12.4 Build EDK_MS4.81d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Sep 26 05:55:58 2023
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Sep 26 05:55:58 2023
+ xsdk.exe -workspace \\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\SDK\SDK_Workspace_35\ -hwspec \\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 12.4 Build EDK_MS4.81d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Sep 26 06:01:07 2023
+ make -f system.make exporttosdk started...
+mkdir -p SDK/SDK_Export/hw
+psf2Edward.exe -inp system.xmp -edwver 1.2 -xml SDK/SDK_Export/hw/system.xml 
+Release 12.4 - psf2Edward EDK_MS4.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME:plb_v46 INSTANCE:mb_plb -
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 39 - 2 master(s) : 4
+slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb -
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 46 - 1 master(s) : 1
+slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb -
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 53 - 1 master(s) : 1
+slave(s)
+
+Checking port drivers...
+
+Performing Clock DRCs...
+WARNING:EDK:2098 - PORT:IWAIT CONNECTOR:ilmb_LMB_Wait -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 386 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:ICE CONNECTOR:ilmb_LMB_CE -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 387 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:IUE CONNECTOR:ilmb_LMB_UE -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 388 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:DWAIT CONNECTOR:dlmb_LMB_Wait -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 424 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:DCE CONNECTOR:dlmb_LMB_CE -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 425 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:DUE CONNECTOR:dlmb_LMB_UE -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_00_b\d
+   ata\microblaze_v2_1_0.mpd line 426 - No driver found. Port will be driven to
+   GND!
+WARNING:EDK:2098 - PORT:bscan_tdo1 CONNECTOR:bscan_tdo1 -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 230 - No driver found. Port will be driven to GND!
+WARNING:EDK:2099 - PORT:bscan_tdi CONNECTOR:bscan_tdi -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 223 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_reset CONNECTOR:bscan_reset -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 224 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_shift CONNECTOR:bscan_shift -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 225 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_update CONNECTOR:bscan_update -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 226 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_capture CONNECTOR:bscan_capture -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 227 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_sel1 CONNECTOR:bscan_sel1 -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 228 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_drck1 CONNECTOR:bscan_drck1 -
+   C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
+   _v2_1_0.mpd line 229 - floating connection!
+WARNING:EDK:2099 - PORT:Peripheral_Reset CONNECTOR:sys_periph_reset -
+   Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 161 - floating
+   connection!
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.
+xdsgen.exe -inp system.xmp -report SDK/SDK_Export/hw/system.html  -make_docs_local
+Release 12.4 - xdsgen EDK_MS4.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Generated Block Diagram.
+Rasterizing microblaze_0.jpg.....
+Rasterizing mb_plb.jpg.....
+Rasterizing ilmb.jpg.....
+Rasterizing dlmb.jpg.....
+Rasterizing dlmb_cntlr.jpg.....
+Rasterizing ilmb_cntlr.jpg.....
+Rasterizing lmb_bram.jpg.....
+Rasterizing LEDs_8Bit.jpg.....
+Rasterizing DIP_Switches_4Bit.jpg.....
+Rasterizing Buttons_3Bit.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing mdm_0.jpg.....
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing system_blkd.jpg.....
+Report generated.
+Report generation completed.
+Done!
+
+********************************************************************************
+At Local date and time: Tue Sep 26 06:01:17 2023
+ xsdk.exe -workspace \\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\SDK\SDK_Workspace_35\ -hwspec \\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 12.4 Build EDK_MS4.81d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+
+********************************************************************************
+At Local date and time: Thu Sep 28 17:19:27 2023
+ make -f system.make exporttosdk started...
+make: Nothing to be done for `exporttosdk'.
+Done!
+
+********************************************************************************
+At Local date and time: Thu Sep 28 17:19:29 2023
+ xsdk.exe -workspace \\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\SDK\SDK_Workspace_35\ -hwspec \\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\SDK\SDK_Export\hw\system.xml started...
+Xilinx Software Development Kit
+Xilinx EDK 12.4 Build EDK_MS4.81d
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	\\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\etc\system.filters
+Done writing Tab View settings to:
+	\\vboxsvr\real-pc\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\etc\system.gui

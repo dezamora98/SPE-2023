@@ -1,13 +1,13 @@
 
 Checking platform configuration ...
 IPNAME:plb_v46 INSTANCE:mb_plb -
-Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_1\system.mhs line 39 - 2 master(s) : 4
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 39 - 2 master(s) : 4
 slave(s)
 IPNAME:lmb_v10 INSTANCE:ilmb -
-Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_1\system.mhs line 46 - 1 master(s) : 1
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 46 - 1 master(s) : 1
 slave(s)
 IPNAME:lmb_v10 INSTANCE:dlmb -
-Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_1\system.mhs line 53 - 1 master(s) : 1
+Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 53 - 1 master(s) : 1
 slave(s)
 
 Checking port drivers...
@@ -60,7 +60,7 @@ WARNING:EDK:2099 - PORT:bscan_drck1 CONNECTOR:bscan_drck1 -
    C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_00_a\data\mdm
    _v2_1_0.mpd line 229 - floating connection!
 WARNING:EDK:2099 - PORT:Peripheral_Reset CONNECTOR:sys_periph_reset -
-   Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_1\system.mhs line 161 - floating
+   Z:\Trabajo\CUJAE\SPE\SPE-2023\examples\ex_0\system.mhs line 161 - floating
    connection!
 
 Performing Clock DRCs...
