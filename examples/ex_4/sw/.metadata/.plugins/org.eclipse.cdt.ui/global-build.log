@@ -1,0 +1,839 @@
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling gpio
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling uartns550
+Compiling intc
+Compiling tmrctr
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+16:05:52 **** Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_gpio_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+make: *** No rule to make target `main.o', needed by `ex_int_gpio.elf'.  Stop.
+16:07:38 **** Build of project ex_int_bsp ****
+make -k all 
+libgen -hw ../ex_4_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../ex_4_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling gpio
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling uartns550
+Compiling intc
+Compiling tmrctr
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+
+**** Build of configuration Debug for project ex_int_gpio ****
+
+Nothing to build for project ex_int_gpio
+16:08:08 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/opt/Xilinx/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [ex_int_gpio.elf] Error 1
+16:08:12 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16352	   1364	   2148	  19864	   4d98	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+16:08:15 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:09:46 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+16:11:40 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:12:10 **** Clean-only build of project ex_int_bsp ****
+make -k clean 
+rm -rf microblaze_0
+16:12:11 **** Build of project ex_int_bsp ****
+make -k all 
+libgen -hw ../ex_4_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../ex_4_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling gpio
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling uartns550
+Compiling intc
+Compiling tmrctr
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+16:12:23 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:12:36 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:14:26 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:15:47 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:16:21 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+16:16:29 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+16:35:08 **** Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+16:35:08 **** Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:35:20 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:36:45 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5138	    328	   2086	   7552	   1d80	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+16:36:49 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:36:57 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:37:06 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:37:18 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:39:49 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5138	    328	   2086	   7552	   1d80	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+16:40:59 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:41:16 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:44:01 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+16:49:00 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5138	    328	   2086	   7552	   1d80	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+17:56:08 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:11: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7826	    412	   2226	  10464	   28e0	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+17:56:41 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+17:56:44 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:10:21 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:10:21 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:10:41 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:11:04 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:13:44 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:31:43 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:11: warning: unused variable 'i' [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8122	    412	   2226	  10760	   2a08	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+19:31:54 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8118	    412	   2220	  10750	   29fe	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+19:35:07 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:35:16 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:35:38 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:38:32 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:39:02 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:39:20 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:39:30 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:39:44 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8242	    412	   2226	  10880	   2a80	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+19:39:49 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:39:57 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:40:29 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8246	    412	   2220	  10878	   2a7e	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+19:41:31 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+19:41:41 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+19:42:06 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+19:42:12 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:43:02 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:43:05 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:43:11 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:44:16 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:53:2: error: unknown type name 'XIntc_Con'
+../src/main.c:54:2: error: conflicting types for 'status'
+../src/main.c:48:11: note: previous definition of 'status' was here
+make: *** [src/main.o] Error 1
+19:48:00 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:48:21 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8954	    412	   2226	  11592	   2d48	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+19:48:28 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:49:39 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:49:46 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:49:52 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:50:21 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:50:47 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:51:53 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:52:02 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:52:13 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:52:57 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:53:23 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:53:43 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+19:53:50 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:00:35 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:02:17 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:02:28 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:03:01 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:09:01 **** Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+20:09:03 **** Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:09:29 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+20:09:40 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:10:52 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:11:35 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8450	    412	   2226	  11088	   2b50	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+20:11:39 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:11:48 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:12:17 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:12:25 **** Clean-only build of configuration Debug for project ex_int_gpio ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  ex_int_gpio.elf.size  ex_int_gpio.elf.elfcheck  ex_int_gpio.elf
+ 
+20:12:25 **** Clean-only build of project ex_int_bsp ****
+make -k clean 
+rm -rf microblaze_0
+20:12:25 **** Build of project ex_int_bsp ****
+make -k all 
+libgen -hw ../ex_4_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../ex_4_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+
+Running libs - 'gmake -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare
+-mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections
+-fdata-sections"'.
+Compiling common
+Compiling lldma
+Compiling standalone
+Compiling gpio
+Compiling mpmc
+Compiling bram
+Compiling uartlite
+Compiling uartns550
+Compiling intc
+Compiling tmrctr
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+20:12:37 **** Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8450	    412	   2226	  11088	   2b50	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+20:12:44 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:13:17 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:13:45 **** Auto Build of configuration Debug for project ex_int_gpio ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../ex_int_bsp/microblaze_0/include -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: ex_int_gpio.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../ex_int_bsp/microblaze_0/lib -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ex_int_gpio.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: ex_int_gpio.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size ex_int_gpio.elf  |tee "ex_int_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8450	    412	   2226	  11088	   2b50	ex_int_gpio.elf
+Finished building: ex_int_gpio.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck ex_int_gpio.elf -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0  |tee "ex_int_gpio.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ex_4_hw_platform/system.xml -pe microblaze_0
+ex_int_gpio.elf 
+
+ELF file	: ex_int_gpio.elf
+elfcheck passed.
+Finished building: ex_int_gpio.elf.elfcheck
+ 
+20:13:50 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:14:00 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:14:05 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:14:13 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:14:20 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:15:15 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+20:15:20 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:15:48 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:16:02 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.
+20:19:11 **** Incremental Build of configuration Debug for project ex_int_gpio ****
+make all 
+make: Nothing to be done for `all'.

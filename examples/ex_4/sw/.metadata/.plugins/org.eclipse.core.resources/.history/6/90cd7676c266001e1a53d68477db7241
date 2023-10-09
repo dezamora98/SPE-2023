@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 9, 2023
+ *      Author: ise
+ */
+
+
+#include "xparameters.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h>
+
+int main(void) {
+	uint32_t i = 0;
+
+	while (true) {
+		xil_printf("hola mundo XPS 14.7 \n");
+		for (i = 0; i < 1000; ++i)
+			;
+	}
+	return 0;
+
+}

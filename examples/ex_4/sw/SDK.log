@@ -1,0 +1,87 @@
+14:17:13.016 INFO  - Processing command line option -hwspec /mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/SDK/SDK_Export/hw/system.xml. 
+15:42:50.311 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+16:00:27.056 INFO  - Successfully generated /mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_int_gpio/src/lscript.ld. 
+16:00:27.057 INFO  - Applying linker script to all configurations of project ex_int_gpio. 
+16:00:27.057 INFO  - Setting rebuild state to true for all configurations of project ex_int_gpio. 
+16:02:52.292 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+16:03:22.662 INFO  - Settings changed on project ex_int_gpio_bsp. Triggering a rebuild... 
+16:03:23.062 INFO  - Refreshed build settings on project ex_int_gpio 
+16:09:46.018 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+16:12:10.699 INFO  - Settings changed on project ex_int_bsp. Triggering a rebuild... 
+16:12:11.091 INFO  - Refreshed build settings on project ex_int_gpio 
+16:12:37.455 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:16:17.960 WARN  - Terminating existing sessions on processor microblaze_0 
+16:16:20.161 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+16:16:20.203 ERROR - Error while closing JTAG UART server: System is NOT a Hardware
+ 
+16:16:28.881 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+16:35:07.392 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+16:36:57.674 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:37:06.540 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:41:00.117 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:41:17.379 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+16:41:19.283 INFO  - System reset is completed. 
+16:42:19.222 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+16:42:19.225 ERROR - Timeout occured while waiting to get reply for command "close_terminal" 
+16:42:19.226 ERROR - Error while closing JTAG UART server:  
+16:45:43.437 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+16:45:43.438 ERROR - Timeout occured while waiting to get reply for command "xdisconnect 0" 
+16:45:43.440 ERROR - Disconnect target failed. 
+17:56:45.279 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:10:21.746 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:10:22.247 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:11:05.153 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:11:07.354 INFO  - System reset is completed. 
+19:35:07.837 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:35:39.038 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:35:40.955 INFO  - System reset is completed. 
+19:39:21.141 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:39:49.670 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:41:28.618 WARN  - Terminating existing sessions on processor microblaze_0 
+19:41:30.828 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+19:41:30.919 ERROR - Error while closing JTAG UART server: System is NOT a Hardware
+ 
+19:41:40.544 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+19:41:46.020 INFO  - Restarting XMD session... 
+19:41:46.041 ERROR - Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:41:47.116 INFO  - XMD session has been restarted. 
+19:42:05.260 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+19:43:05.799 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:44:08.693 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+19:44:08.693 ERROR - Timeout occured while waiting to get reply for command "xstop 0" 
+19:48:01.300 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Cannot perform the Debug Command, Current Processor State is "Running"
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+19:49:46.839 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+19:50:48.667 INFO  - System reset is completed. 
+19:51:54.418 INFO  - Processor reset is completed for microblaze_0 
+19:52:03.156 INFO  - Processor reset is completed for microblaze_0 
+19:52:14.295 INFO  - System reset is completed. 
+20:02:18.372 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:02:56.265 ERROR - Unexpected Error while writing user command to XMD stdin: {} java.io.IOException
+	at org.eclipse.debug.internal.core.StreamsProxy.write(StreamsProxy.java:129)
+	at com.xilinx.sdk.targetmanager.ui.xmd.XMDConsolePresenter.issueXMDConsoleCommand(Unknown Source)
+
+20:03:54.130 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+20:04:06.613 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+20:04:06.615 ERROR - Timeout occured while waiting to get reply for command "xdisconnect 0" 
+20:04:06.615 ERROR - Disconnect target failed. 
+20:05:06.721 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+20:05:06.723 ERROR - Timeout occured while waiting to get reply for command "xdisconnect -cable" 
+20:09:29.064 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+20:11:40.055 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:12:44.826 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:13:50.772 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:14:06.146 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:14:14.384 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:14:35.866 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+20:15:14.101 INFO  - FPGA configured successfully with bitstream "/mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/sw/ex_4_hw_platform/download.bit" 
+20:15:49.638 INFO  - Processor reset is completed for microblaze_0 
+20:16:03.300 INFO  - System reset is completed. 

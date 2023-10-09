@@ -1,0 +1,15 @@
+#include <xparameters.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h>
+
+int main(void)
+{
+    while (true)
+    {
+        printf("hola mundo XPS 14.7 \n");
+        for(uint32_t i = 0;i<1000;++i);
+    }
+    return 0;
+
+}

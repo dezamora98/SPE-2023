@@ -1,0 +1,2 @@
+VHDL lmb_bram_elaborate_v1_00_a /mnt/hgfs/D/Documents/Trabajo/CUJAE/SPE/SPE-2023/examples/ex_4/hdl/elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd
+vhdl work ../hdl/system_lmb_bram_wrapper.vhd

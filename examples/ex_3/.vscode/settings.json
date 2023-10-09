@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "xio.h": "c",
+        "xparameters.h": "c",
+        "xdebug.h": "c",
+        "xtmrctr.h": "c",
+        "stdio.h": "c",
+        "stddef.h": "c",
+        "ctype.h": "c",
+        "stdint.h": "c",
+        "cstdint": "c",
+        "microblaze_exceptions_g.h": "c",
+        "microblaze_interrupts_i.h": "c",
+        "xil_cache.h": "c",
+        "xil_exception.h": "c",
+        "uartns550_header.h": "c",
+        "xstatus.h": "c"
+    }
+}

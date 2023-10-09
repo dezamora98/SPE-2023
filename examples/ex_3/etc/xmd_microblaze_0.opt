@@ -1,0 +1,1 @@
+connect mb mdm -cable type xilinx_platformusb port USB21 frequency 750000 -debugdevice cpunr 1

@@ -1,0 +1,6 @@
+20:15:15 **** Auto Build of project ex_int_bsp ****
+make -k all 
+Finished building libraries
+
+20:15:15 Build Finished (took 79ms)
+
